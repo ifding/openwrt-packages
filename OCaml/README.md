@@ -1,10 +1,6 @@
 
 3520-Fall 2016
-Fei Ding
 11/30/2016
-
-Pledge:
-On my honor I have neither given nor received aid on this exam.
 
 How to run this program:
 
