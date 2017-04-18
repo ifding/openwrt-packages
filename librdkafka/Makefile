@@ -21,9 +21,13 @@ include $(INCLUDE_DIR)/package.mk
 define Package/librdkafka
     TITLE:=librdkafka
     SECTION:=libs
-    DEPENDS:=+libpthread +zlib +librt +libcrypto +libopenssl
+    DEPENDS:=+libpthread +zlib +librt 
     CATEGORY:=Libraries
     URL:=https://github.com/edenhill/librdkafka
+endef
+
+define Package/librdkafka/description
+	Apache Kafka C library
 endef
 
 TARGET_CONFIGURE_OPTS = \
@@ -46,14 +50,14 @@ define Build/Configure
 endef
 
 define Package/librdkafka/prepare
-        mkdir -p $(PKG_BUILD_DIR)
-        $(INSTALL_DIR) $(PKG_BUILD_DIR)/usr/include
-        $(INSTALL_DIR) $(PKG_BUILD_DIR)/usr/lib
+	mkdir -p $(PKG_BUILD_DIR)
+	$(INSTALL_DIR) $(PKG_BUILD_DIR)/usr/include
+	$(INSTALL_DIR) $(PKG_BUILD_DIR)/usr/lib
 endef
 
 define Package/librdkafka/install
-        $(INSTALL_DIR) $(1)/usr/lib
-        $(CP) $(PKG_INSTALL_DIR)/usr/local/lib/*.so* $(1)/usr/lib/
+	$(INSTALL_DIR) $(1)/usr/lib
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/*.so* $(1)/usr/lib/
 endef
 
 $(eval $(call BuildPackage,librdkafka))
