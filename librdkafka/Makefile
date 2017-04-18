@@ -7,11 +7,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=librdkafka
-PKG_VERSION:=0.8
+PKG_VERSION:=0.9.1
 
 PKG_SOURCE:=$(PKG_VERSION).zip
 PKG_SOURCE_URL:=https://github.com/edenhill/librdkafka/archive
-PKG_SOURCE_VERSION:=0.8.6
+PKG_SOURCE_VERSION:=0.9.1
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_INSTALL:=1
 PKG_FIXUP:=autoreconf
@@ -21,7 +21,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/librdkafka
     TITLE:=librdkafka
     SECTION:=libs
-    DEPENDS:=+libpthread +zlib +librt 
+    DEPENDS:=+libpthread +zlib +librt +libcrypto +libopenssl
     CATEGORY:=Libraries
     URL:=https://github.com/edenhill/librdkafka
 endef
