@@ -57,7 +57,7 @@ endef
 
 define Package/librdkafka/install
 	$(INSTALL_DIR) $(1)/usr/lib
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/*.so* $(1)/usr/lib/
+	$(CP) $(PKG_INSTALL_DIR)/usr/local/lib/*.so* $(1)/usr/lib/
 endef
 
 $(eval $(call BuildPackage,librdkafka))
