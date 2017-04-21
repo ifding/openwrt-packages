@@ -2,7 +2,9 @@
 # librdkafka for OpenWrt
 
 host machine: Ubuntu 14.04
+
 target machine: mipsel
+
 librdkafka version: v0.9.5
 
 
@@ -91,7 +93,7 @@ LICENSES.txt: .PHONY
 
 Let's say the name of app is: kafkaClient
 
-### 1. Create Makefile
+### 2.1 Create Makefile
 
 ```
 $ mkdir package/kafkaClient
@@ -100,7 +102,7 @@ $ vi Makefile
 ```
 Note: [package/kafkaClient/Makefile](kafkaClient/Makefile)
 
-### 2. Create src dir
+### 2.2 Create src dir
 
 ```
 $ mkdir src
@@ -116,7 +118,7 @@ $ cp build_dir/target-mipsel_24kec+dsp_musl-1.1.16/librdkafka-0.9.5/examples/rdk
 $ cp build_dir/target-mipsel_24kec+dsp_musl-1.1.16/librdkafka-0.9.5/src/rdkafka.h package/kafkaClient/src
 ```
 
-### 3. Compile
+### 2.3 Compile
 
 ```
 $ make V=s
@@ -125,5 +127,4 @@ $ make V=s
 ## 3. Reference
 
 * [http://blog.sina.com.cn/s/blog_636a55070102wa1d.html](http://blog.sina.com.cn/s/blog_636a55070102wa1d.html)
-
 * [http://blog.sina.com.cn/s/blog_636a55070102waby.html](http://blog.sina.com.cn/s/blog_636a55070102waby.html)
