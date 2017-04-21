@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004852527/STAGING_DIR/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004852527/STAGING_DIR/operation=append
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004852527/STAGING_DIR/value=/home/tiger/Downloads/openwrt/staging_dir/toolchain-mipsel_24kec+dsp_gcc-5.3.0_musl-1.1.16/bin
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004852527/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004852527/appendContributed=true
