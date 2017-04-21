@@ -1,5 +1,5 @@
 MY_LIBS   =
-LDFLAGS = -L/home/tiger/Downloads/openwrt/staging_dir/target-mipsel_24kec+dsp_musl-1.1.16/root-ramips/usr/lib -L/home/tiger/Downloads/openwrt/staging_dir/toolchain-mipsel_24kec+dsp_gcc-5.3.0_musl-1.1.16/lib -lrdkafka -latomic
+LDFLAGS = -L/home/ubuntu/Downloads/openwrt/staging_dir/target-mipsel_24kec+dsp_musl-1.1.16/root-ramips/usr/lib -L/home/ubuntu/Downloads/openwrt/staging_dir/toolchain-mipsel_24kec+dsp_gcc-5.3.0_musl-1.1.16/lib -lrdkafka -latomic
 SRCDIRS   =
 PROGRAM   = kafkaClient
 SRCEXTS = .c
